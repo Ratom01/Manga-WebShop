@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-md-4 mb-4" *ngFor="let manga of mangas">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">{{ manga.jpTitleRomaji }} ({{ manga.enTitle }})</h5>
+        <p class="card-text">{{ manga.description }}</p>
+        <p class="card-text">{{ manga.volumes.at(1)?.chapters }}</p>
+        <img class="img-fluid" [src]="manga.volumes[1]?.previewLink" onerror="this.src='assets/images/placeholder.jpg'" >
+        <p class="card-text">{{ manga.volumes.at(1)?.price }}</p>
+        <p class="card-text">{{ manga.volumes.at(1)?.volumeNumber }}</p>
+      </div>
+    </div>
+  </div>
+</div>

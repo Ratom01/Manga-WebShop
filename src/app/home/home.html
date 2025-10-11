@@ -1,0 +1,18 @@
+<div class="container mt-5">
+  <div class="text-center">
+    <h1>Üdvözlünk a MangaShop-ban! 🎉</h1>
+    <p class="lead">Fedezd fel a legújabb mangákat és kedvenceidet!</p>
+    <a routerLink="/manga" class="btn btn-primary btn-lg mt-3">Fedezd fel a mangákat</a>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-md-4" *ngFor="let feature of features">
+      <div class="card h-100 text-center">
+        <div class="card-body">
+          <h5 class="card-title">{{ feature.title }}</h5>
+          <p class="card-text">{{ feature.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

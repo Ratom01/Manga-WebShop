@@ -1,0 +1,38 @@
+[
+  {
+    "id" : 1,
+    "nameJP": "Shingeki no Kyojin",
+    "nameENG" : "Demon Slayer",
+    "volume" : "1",
+    "chapter" : "8",
+    "price" : "2000",
+    "description" : "This is the demon slayer vol 1.",
+    "authorArtId" : "1",
+    "authorStoryId" : "2",
+    "imgUrl" : "url"
+  },
+  {
+    "id" : 2,
+    "nameJP": "Shingeki no Kyojin",
+    "nameENG" : "Demon Slayer",
+    "volume" : "1",
+    "chapter" : "8",
+    "price" : "2000",
+    "description" : "This is the demon slayer vol 2.",
+    "authorArtId" : "1",
+    "authorStoryId" : "2",
+    "imgUrl" : "url"
+  },
+  {
+    "id" : 3,
+    "nameJP": "Shingeki no Kyojin",
+    "nameENG" : "Demon Slayer",
+    "volume" : "1",
+    "chapter" : "8",
+    "price" : "2000",
+    "description" : "This is the demon slayer vol 3.",
+    "authorArtId" : "1",
+    "authorStoryId" : "2",
+    "imgUrl" : "url"
+  }
+]

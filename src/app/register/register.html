@@ -1,0 +1,36 @@
+<form>
+    <div class="mb-3 mt-3">
+        <label class="form-label">Email: </label>
+        <input (ngModel)="user?.email;" name="email" #email="ngModel" class="form-control" type="email" required>
+        <div class="validation-message">
+            @if (email.errors?.['required']) {
+                <span>This is Required</span>
+            }
+        </div>
+    </div>
+    <div class="mb-3 mt-3">
+        <label class="form-label">Name:</label>
+        <input (ngModel)="user?.name" name="name" #name="ngModel" class="form-control" type="text" required>
+        <div class="validation-message">
+            @if (name.errors?.['required']) {
+                <span>This is Required</span>
+            }
+        </div>
+    </div>
+    <div class="mb-3 mt-3">
+        <label class="form-label">Password:</label>
+        <input (ngModel)="user?.password" name="password" #password="ngModel" class="form-control" type="password" required>
+        <div class="validation-message">
+            @if (password.errors?.['required']) {
+                <span>This is Required</span>
+            }
+        </div>
+    </div>
+    <div class="mb-3 mt-3">
+        <label class="form-label">Password again:</label>
+        <input class="form-control" type="password" required>
+    </div>
+    <button class="btn btn-primary" type="submit" (click)="$event.preventDefault()">
+        Regisztrálás
+    </button>
+</form>
